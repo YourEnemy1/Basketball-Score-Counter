@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="Basketball counter.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <div id="STFh">
+                <h4 id="timeouth4">Timeouts</h4>
+                <p id="htimeout-count">****</p>
+                <h4 id="foulh4">Fouls</h4>
+                <p id="hfoul-count">0</p>
+                <h1 id="home-count">0</h1>
+
+            </div>
+
+            <div class="homeBTNadd">
+                <button id="hadd1" onclick="homeadd1()">+1</button>
+                <button id="hadd2" onclick="homeadd2()">+2</button>
+                <button id="hadd3" onclick="homeadd3()">+3</button>
+            </div>
+            <div class="homeBTNsub">
+                <button id="hsub1" onclick="homesub1()">-1</button>
+                <button id="hsub2" onclick="homesub2()">-2</button>
+                <button id="hsub3" onclick="homesub3()">-3</button>
+            </div>
+            <div id="HTimeOutReset">
+                <button id="htimeoutButton" onclick="htimeOut()">Timeout!</button>
+                <button id="htimeoutresetButton" onclick="hrtimeOut()">Timeout Reset</button>
+                <button id="hfoulButton" onclick="hfoul()">Foul!</button>
+                <button id="hfoulresetButton" onclick="hrfoul()">Foul Reset</button>
+            </div>
+            
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <div id="STFg">
+                <h4 id="timeoutg4">Timeouts</h4>
+                <p id="gtimeout-count">****</p>
+                <h4 id="foulg4">Fouls</h4>
+                <p id="gfoul-count">0</p>
+                <h1 id="guest-count">0</h1>
+            </div>
+            <div class="guestBTNadd">
+                <button id="gadd1" onclick="guestadd1()">+1</button>
+                <button id="gadd2" onclick="guestadd2()">+2</button>
+                <button id="gadd3" onclick="guestadd3()">+3</button>
+            </div>
+            <div class="guestBTNsub">
+                <button id="gsub1" onclick="guestsub1()">-1</button>
+                <button id="gsub2" onclick="guestsub2()">-2</button>
+                <button id="gsub3" onclick="guestsub3()">-3</button>
+            </div>
+            <div id="GTimeOutReset">
+                <button id="gtimeoutButton" onclick="gtimeOut()">Timeout!</button>
+                <button id="gtimeoutresetButton" onclick="grtimeOut()">Timeout Reset</button>
+                <button id="gfoulButton" onclick="gfoul()">Foul!</button>
+                <button id="gfoulresetButton" onclick="grfoul()">Foul Reset</button>
+            </div>
+        </div>
+        <button id="NewGame" onclick="resetBTN()">New Game!</button>
+    </div>
+    <script src="Basketball counter.js"></script>
+</body>
+</html>
