@@ -1,1 +1,1 @@
-# Basketball-Score-Counter
+# this is a basketball score counter
